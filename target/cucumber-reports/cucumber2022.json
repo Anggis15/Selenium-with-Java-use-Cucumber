@@ -1,0 +1,455 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-01T07:31:52.365Z",
+        "line": 3,
+        "name": "Valid email",
+        "description": "",
+        "id": "tentukan-email-valid-atau-engga.;valid-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1963800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Saya memasukan email \"anggis@ymail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anggis@ymail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.saya_memasukan_email(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Saya test formatnya",
+            "match": {
+              "location": "stepdefs.EmailFeatureStepDef.saya_test_formatnya()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2028500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Hasilnya harus \"benar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"benar\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-01T07:31:52.397Z",
+        "line": 8,
+        "name": "Invalid email",
+        "description": "",
+        "id": "tentukan-email-valid-atau-engga.;invalid-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 996200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Saya memasukan email \"anggis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anggis\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.saya_memasukan_email(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Saya test formatnya",
+            "match": {
+              "location": "stepdefs.EmailFeatureStepDef.saya_test_formatnya()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Hasilnya harus \"salah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salah\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Tentukan email valid atau engga.",
+    "description": "",
+    "id": "tentukan-email-valid-atau-engga.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featuresFile/EmailFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-01T07:31:52.433Z",
+        "line": 3,
+        "name": "Register Dengan Email yang valid",
+        "description": "",
+        "id": "add-customer;register-dengan-email-yang-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35249987700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User berada dalam halam Add Customer",
+            "match": {
+              "location": "stepdefs.AddCustomerStepDef.user_berada_dalam_halam_Add_Customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105718300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User memilih \"done\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"done\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memilih(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141621100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User memasukan nama depan \"anggi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anggi\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_nama_depan(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122671800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User memasukan nama belakang \"saputra\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saputra\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_nama_belakang(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133643600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User memasukan email \"ada_aja@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ada_aja@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295210700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User memasukan alamat \"Di jalanin aja dulu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Di jalanin aja dulu\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_alamat(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163562100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User memasukan Nomer telpon \"081372645627\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"081372645627\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_Nomer_telpon(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6780841200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User menekan submit",
+            "match": {
+              "location": "stepdefs.AddCustomerStepDef.user_menekan_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185504500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User dapat melihat kredensial yand di berikan",
+            "match": {
+              "location": "stepdefs.AddCustomerStepDef.user_dapat_melihat_kredensial_yand_di_berikan()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-01T07:32:35.629Z",
+        "line": 14,
+        "name": "Register Dengan Email yang invalid",
+        "description": "",
+        "id": "add-customer;register-dengan-email-yang-invalid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34841333500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User berada dalam halam Add Customer",
+            "match": {
+              "location": "stepdefs.AddCustomerStepDef.user_berada_dalam_halam_Add_Customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79787800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User memilih \"done\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"done\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memilih(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110703700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User memasukan nama depan \"anggi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anggi\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_nama_depan(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96742500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User memasukan nama belakang \"saputra\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saputra\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_nama_belakang(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104722100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User memasukan email \"ada_aja_ah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ada_aja_ah\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120676400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User memasukan alamat \"Di jalanin aja dulu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Di jalanin aja dulu\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_alamat(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127659200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User memasukan Nomer telpon \"081372645627\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"081372645627\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_memasukan_Nomer_telpon(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134676000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User menekan submit",
+            "match": {
+              "location": "stepdefs.AddCustomerStepDef.user_menekan_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180517300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User dapat melihat pemberi tahuan \"Email-ID is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Email-ID is not valid\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefs.AddCustomerStepDef.user_dapat_melihat_pemberi_tahuan(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Customer",
+    "description": "",
+    "id": "add-customer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featuresFile/addCustomer.feature",
+    "tags": []
+  }
+]
